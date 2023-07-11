@@ -38,7 +38,7 @@ dependencies {
 }
 
 testrunner {
-    projectFile = 'qa-guru-soapui-example-soapui-project.xml'
+    projectFile = 'dataAccess-soapui-project.xml'
     outputFolder = 'build/soapui/'
 }
 
@@ -70,7 +70,7 @@ task genJaxb {
     }
 }
 
-compileJava.dependsOn genJaxb
+// compileJava.dependsOn genJaxb
 
 test {
     useJUnitPlatform()
